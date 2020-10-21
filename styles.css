@@ -176,6 +176,47 @@ header nav .navList.active{
     top: 25%;
     right: 0;
     z-index: -50;
+    /* filter: invert(100%); */
+    
+}
+
+.bg-top .me:before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-image: url('images/meB.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -50;
+    mix-blend-mode: exclusion;
+    visibility: hidden;
+    animation: glitchB .5s linear 1;
+    animation-delay: 7s;
+
+}
+.bg-top .me:after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-image: url('images/meR.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -50;
+    mix-blend-mode: exclusion;
+    visibility: hidden;
+    animation: glitchR .5s linear 1;
+    animation-delay: 7s;
+}
+
+.bg-top .me:active:before{
+    animation: glitchR .5s linear 1;
+}
+.bg-top .me:active:after{
+    animation: glitchB .5s linear 1;
 }
 
 .bg-top section{
@@ -847,5 +888,81 @@ footer img:hover{
     }
     to{
         border-right-color: transparent;
+    }
+}
+
+@keyframes glitchR{
+    0%{
+        background-position: 0 0;
+        visibility: hidden;
+    }
+    10%{
+        background-position: 5px 0;
+    }
+    20%{
+        background-position: -5px 0;
+    }
+    30%{
+        background-position: 15px 0;
+    }
+    40%{
+        background-position: -5px 0;
+    }
+    50%{
+        background-position: -25px 0;
+    }
+    60%{
+        background-position: -50px 0;
+    }
+    70%{
+        background-position: 0 -20px;
+    }
+    80%{
+        background-position: -60px -20px;
+    }
+    81%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 0;
+        visibility: visible;
+
+    }
+}
+@keyframes glitchB{
+    0%{
+        background-position: 0 0;
+        visibility: hidden;
+    }
+    10%{
+        background-position: -5px 0;
+    }
+    20%{
+        background-position: 5px 0;
+    }
+    30%{
+        background-position: -15px 0;
+    }
+    40%{
+        background-position: 5px 0;
+    }
+    50%{
+        background-position: 25px 0;
+    }
+    60%{
+        background-position: 50px 0;
+    }
+    70%{
+        background-position: 0 20px;
+    }
+    80%{
+        background-position: 60px 20px;
+    }
+    81%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 0;
+        visibility: visible;
     }
 }
