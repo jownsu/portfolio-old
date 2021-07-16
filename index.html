@@ -4,12 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jhones</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/me.css">
+<link rel="stylesheet" href="css/Offer.css">
+<link rel="stylesheet" href="css/Skills.css">
+<link rel="stylesheet" href="css/Projects.css">
+<link rel="stylesheet" href="css/Contacts.css">
+<link rel="stylesheet" href="css/Footer.css">
 <link rel="shortcut icon" href="images/jhones.png" type="image/x-icon">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
 </head>
 <body>
 
 <header>
+    <div class="container">
     <nav>
         <div class="navLogo">
             <h1><span>J</span>ownsu</h1>
@@ -24,162 +35,346 @@
         </ul>
 
         <div id="ham" class="ham hide-desktop"><div id="hamBar" class="hamBar "></div></div>
-
-
     </nav>
+</div>
 </header>
+<section id="me">
+        <div id="top" class="bg-top">
+            <section>
+                <h1>Hello,<span class=""></span></h1>
+                <h1>I'm <span>J</span>hones <span>D</span>igno<span class=""></span></h1>
+                <p class="back-end">I'm a Back-End Developer</p>
+            </section>
+            <div class="me">
+            </div>
+        </div>
+</section>
 
-<div id="top" class="bg-top">
-    <section>
-        <h1>Hello,<span></span></h1>
-        <h1>My Name is<span></span></h1>
-        <h1>Jhones<span></span></h1>
-        <p class="line typeEffect">Web Developer Wanna Be</p>
-    </section>
-    <div class="me">
+<section id="services" class="offer">
+    <div class="container">
+      <div class="offer-tag">
+        <h2>
+          What I <span>Offer?</span>
+        </h2>
+        <p>Create functional user experience</p>
+      </div>
+      <div class="flex">
+        <div class="offer-cards reveal">
+          <img src="images/responsive.svg" alt=""></img>
+          <div class="o-info">
+            <h3>Responsive Website</h3>
+            <p>
+              Develop a responsive website layout for better user experience
+            </p>
+          </div>
+        </div>
+        <div class="offer-cards reveal">
+          <img src="images/design.svg" alt=""></img>
+          <div class="o-info">
+            <h3>Convert your design into a working website.</h3>
+            <p>
+              Make an ideal functional website with your mockups and ui
+              prototypes.
+            </p>
+          </div>
+        </div>
+        <div class="offer-cards reveal">
+          <img src="images/team.svg" alt=""></img>
+          <div class="o-info">
+            <h3>Team Collaboration</h3>
+            <p>
+              Can work as part of a team and has outstanding collaboration
+              skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="my-skills">
+    <div class="container">
+      <h2>
+        My <span>Skills</span>
+      </h2>
+      <div class="flex">
+        <div class="lg">
+          <img src="images/skills/html.svg" alt=""></img>
+          <p>HTML5</p>
+        </div>
+        <div class="lg">
+          <img src="images/skills/css.svg" alt=""></img>
+          <p>CSS</p>
+        </div>
+        <div class="lg">
+          <img src="images/skills/materializecss.svg" alt=""></img>
+          <p>Materialize</p>
+        </div>
+        <div class="lg">
+          <img src="images/skills/javascript.svg" alt=""></img>
+          <p>Javascript</p>
+        </div>
+        <div class="lg">
+          <img src="images/skills/php.svg" alt=""></img>
+          <p>PHP</p>
+        </div>
+        <div class="lg">
+          <img src="images/skills/laravel.svg" alt=""></img>
+          <p>laravel</p>
+        </div>
+        <div class="lg">
+          <img src="images/skills/mysql.svg" alt=""></img>
+          <p>MySql</p>
+        </div>
+        <div class="lg">
+          <img src="images/skills/git.svg" alt=""></img>
+          <p>Git</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<div class="projects" id="projects">
+    <div class="container">
+      <h2>
+        My <span>Projects</span>
+      </h2>
+
+      <div class="img-flex reveal">
+        <div>
+          <a href="http://jownsu.epizy.com/genshin/" target="_blank" rel="noreferrer" >
+            <img src="images/projects/genshin.png" alt="" />
+          </a>
+        </div>
+        <div class="img-info">
+          <div class="img-title">
+            <h4>
+              No.<span>01</span>
+            </h4>
+            <h3>Genshin Impact Archive</h3>
+          </div>
+
+          <div class="img-desc">
+            <p>
+              This is my project while learning PHP OOP. It is made 
+              with MaterializeCSS. It consists of archive list of 
+              characters, weapons, artifacts and consumables. It also 
+              has API, check this link to try:
+              <a href="http://jownsu.epizy.com/genshin/API"><span>Genshin API</span></a>
+            </p>
+          </div>
+
+          <div class="flex">
+            <small>HTML</small>
+            <small>CSS</small>
+            <small>JAVASCRIPT</small>
+            <small>PHP</small>
+            <small>MYSQL</small>
+          </div>
+
+          <div class="opt">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/jownsu/genshin.gg"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://jownsu.epizy.com/genshin/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="img-flex reveal">
+        <div class="img-info-2">
+          <div class="img-title">
+            <h4>
+              No.<span>02</span>
+            </h4>
+            <h3>Fylo Landing Page</h3>
+          </div>
+
+          <div class="img-desc">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Possimus vero adipisci magni ab sequi magnam nisi, ipsa 
+                consequatur porro laudantium nemo mollitia totam tempore. 
+                Enim natus ex corporis molestiae quisquam. Dolorum digniss
+                imos cum blanditiis, atque deserunt amet magni cumque voluptas
+            </p>
+          </div>
+
+          <div class="flex">
+            <small>HTML</small>
+            <small>CSS</small>
+            <small>JAVASCRIPT</small>
+          </div>
+
+          <div class="opt">
+            <ul>
+              <li>
+                <a href="#" target="_blank" rel="noreferrer" >
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noreferrer" >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <a href="#" target="_blank" rel="noreferrer" >
+            <img src="images/projects/genshin1.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="img-flex reveal">
+        <div>
+          <a href="#" target="_blank" rel="noreferrer" >
+            <img src="images/projects/genshin.png" alt="" />
+          </a>
+        </div>
+        <div class="img-info">
+          <div class="img-title">
+            <h4>
+              No.<span>03</span>
+            </h4>
+            <h3>Genshin Impact Archive</h3>
+          </div>
+
+          <div class="img-desc">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Possimus vero adipisci magni ab sequi magnam nisi, ipsa 
+              consequatur porro laudantium nemo mollitia totam tempore. 
+              Enim natus ex corporis molestiae quisquam. Dolorum digniss
+              imos cum blanditiis, atque deserunt amet magni cumque voluptas.
+            </p>
+          </div>
+
+          <div class="flex">
+            <small>HTML</small>
+            <small>CSS</small>
+            <small>JAVASCRIPT</small>
+            <small>PHP</small>
+            <small>MYSQL</small>
+          </div>
+
+          <div class="opt">
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
 </div>
 
-<div id="services" class="services-container">
-    
-    <div class="service-intro">
-        <h1>Serv<span>i</span>ces</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias voluptatum explicabo!</p>
+<div class="touch" id="contacts">
+<div class="container">
+    <div class="touch-wrapper">
+    <img src="images/left-qoute.svg" alt="" />
+    <h1>
+        Need a back-end <span>developer ?</span>{" "}
+    </h1>
+    <h3>
+        Let's <span>work</span> together !!
+    </h3>
+    <div class="message">
+        <small>
+        " Hello, my name is Jhones, and i'm a back-end developer. If you
+        think i could help your business, just contact me. "
+        </small>
     </div>
-
-    <div class="services">
-        <img src="images/services.png" alt="service">
-        <h2>Web Design</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-    </div>
-
-    <div class="services">
-        <img src="images/services.png" alt="service">
-        <h2>Web Design</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-    </div>
-
-    <div class="services">
-        <img src="images/services.png" alt="service">
-        <h2>Web Design</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-    </div>
-
-    <div class="services">
-        <img src="images/services.png" alt="service">
-        <h2>Web Design</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
-    </div>
-
-</div>
-
-<div id="projects" class="projects-container">
-
-    <h1>Recent <span>Projects</span></h1>
-
-    <div class="project">
-        <div class="project-info">
-            <h2>Project 1</h2>
-            <h3>Coding is Love</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-        </div>
-        <div class="project-image"></div>
-    </div>
-    
-    <div class="project">
-        <div class="project-info">
-            <h2>Project 2</h2>
-            <h3>Coding is Love</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-        </div>  
-        <div class="project-image"></div>
-    </div>
-    
-    <div class="project">
-        <div class="project-info">
-            <h2>Project 3</h2>
-            <h3>Coding is Love</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-        </div>
-        <div class="project-image"></div>
-    </div>
-    
-    <div class="project">
-        <div class="project-info">
-            <h2>Project 4</h2>
-            <h3>Coding is Love</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-        </div>
-        <div class="project-image"></div>
-    </div>
-    
-    <div class="project">
-        <div class="project-info">
-            <h2>Project 5</h2>
-            <h3>Coding is Love</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-        </div>
-        <div class="project-image"></div>
-    </div>
-</div>
-
-<div id="about" class="aboutMe-container">
-    <div class="aboutMe-info">
-        <h1>About <span>Me</span></h1>
-        <h2>Full Stack Developer</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni! Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt reprehenderit libero enim!</p>
-        <a href="#">Download Resume</a>
-    </div>
-
-    <div class="aboutMe-image">
-        <img src="images/card.jpg" alt="aboutMeImg">
-    </div>
-</div>
-
-<div id="contact" class="contactInfo-container">
-    <h1>Contact <span>Info</span></h1>
-
-    <div class="contactInfo">
-        <img src="images/phone.png" alt="phone">
-        
-        <div class="details">
-            <h3>Phone</h3>
-            <p>+639 263 414 237</p>
-            <p>+639 155 585 443</p>
-        </div>
-    </div>
-
-    <div class="contactInfo">
-        <img src="images/new-post.png" alt="phone">
-        
-        <div class="details">
-        <h3>Email</h3>
+    <div class="contact-details">
+        <div class="flex">
+        <i class="fas fa-envelope"></i>
+        <a
+            href="https://mail.google.com/mail/u/0/#inbox"
+            target="_blank"
+            rel="noreferrer"
+        >
             <p>jhonesdigno777@gmail.com</p>
-            <p>jhonesdigno666@gmail.com</p>
+        </a>
+        </div>
+        <div class="flex">
+        <i class="fas fa-phone"></i>
+        <p>+639263414237</p>
+        </div>
+        <div class="flex">
+        <i class="fab fa-facebook-messenger"></i>
+        <a
+            href="https://m.me/jownsu"
+            target="_blank"
+            rel="noreferrer"
+        >
+            <p>Messenger</p>
+        </a>
         </div>
     </div>
-
-    <div class="contactInfo">
-        <img src="images/map-marker.png" alt="phone">
-        
-        <div class="details">
-            <h3>Address</h3>
-            <p>Tala Caloocan City</p>
-        </div>
     </div>
-
+</div>
 </div>
 
-<footer id="">
-    <h2><span>J</span>hones <span>D</span>igno</h2>
-    <p>Your Complete Web Solution</p>
-    <img src="images/facebook-new.png" alt="fb">
-    <img src="images/instagram-new.png" alt="ig">
-    <img src="images/twitter.png" alt="tt">
-    <img src="images/behance.png" alt="be">
-    <p>Copyright © 2020. All rights reserved</p>
-</footer>
+<div class="footer">
+<hr></hr>
+<div class="container">
+    <div class="footer-details">
+    <div class="flex">
+        <small>Designed by Jhones Digno &copy; 2021</small>
+        <a
+        href="https://github.com/jownsu"
+        target="_blank"
+        rel="noreferrer"
+        >
+        <i class="fab fa-github"></i>
+        </a>
+    </div>
+    <div class="flex">
+        <i class="fas fa-map-marker-alt"></i>
+        <small>Philippines</small>
+    </div>
+    </div>
+</div>
+</div>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
+<script src="js/reveal.js"></script>
 </body>
 </html>

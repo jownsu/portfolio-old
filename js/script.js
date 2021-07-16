@@ -18,7 +18,7 @@ a.forEach(item => item.addEventListener('click', function(){
 document.addEventListener('scroll', function(){
     var scroll = window.scrollY;
     if(scroll > 250){
-        header.style.background = 'rgb(41, 41, 41)';
+        header.style.background = '#0E1625';
     }else{
         header.style.background = 'rgba(41, 41, 41, 0.3)';
     }
