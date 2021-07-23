@@ -29,6 +29,13 @@ body{
   justify-content: space-between;
   align-items: center;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1em;
+}
+
 span {
   color: #fd0037;
 }
