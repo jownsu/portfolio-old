@@ -222,7 +222,7 @@ header nav .navList.active{
 #intro .me{
     height: 85%;
     width: 65%;
-    background-image: url('../images/me.png');
+    background-image: url('./images/me.png');
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -235,7 +235,7 @@ header nav .navList.active{
     content: '';
     height: 100%;
     width: 100%;
-    background-image: url('../images/meB.png');
+    background-image: url('./images/meB.png');
     background-size: cover;
     position: absolute;
     top: 0;
@@ -250,7 +250,7 @@ header nav .navList.active{
     content: '';
     height: 100%;
     width: 100%;
-    background-image: url('../images/meR.png');
+    background-image: url('./images/meR.png');
     background-size: cover;
     position: absolute;
     top: 0;
