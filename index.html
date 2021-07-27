@@ -4,13 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jhones</title>
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/me.css">
-<link rel="stylesheet" href="css/Offer.css">
-<link rel="stylesheet" href="css/Skills.css">
-<link rel="stylesheet" href="css/Projects.css">
-<link rel="stylesheet" href="css/Contacts.css">
-<link rel="stylesheet" href="css/Footer.css">
+<link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" href="images/jhones.png" type="image/x-icon">
 <link
 rel="stylesheet"
@@ -27,7 +21,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
         </div>
 
         <ul class="navList " id="nav">
-            <li><a href="#me" data-after="Home">Home</a></li>
+            <li><a href="#intro" data-after="Home">Home</a></li>
             <!-- <li><a href="#services" data-after="Services">Services</a></li> -->
             <li><a href="#projects" data-after="Projects">Projects</a></li>
             <!-- <li><a href="#about" data-after="About">About</a></li> -->
@@ -39,17 +33,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
 </div>
 </header>
 
-<section id="me">
-        <div id="top" class="bg-top">
-            <section>
-                <h1>Hello,<span class=""></span></h1>
-                <h1>I'm <span>J</span>hones <span>D</span>igno<span class=""></span></h1>
-                <p class="back-end">I'm a Back-End Developer</p>
-            </section>
-            <div class="me">
-            </div>
+<section id="intro">
+
+    <div class="intro-container">
+      <div class="intro-info">
+          <h1>Hello,</h1>
+          <h1>I'm <span>J</span>hones <span>D</span>igno<span class=""></span></h1>
+          <p class="back-end">I'm a Back-End Developer</p>
         </div>
+      <div class="me"></div>
+    </div>
+
 </section>
+
 <!-- 
 <section id="services" class="offer">
     <div class="container">
@@ -98,42 +94,42 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
 </section> -->
 
 
-<section class="my-skills">
+<section id="my-skills">
     <div class="container">
       <h2>
         My <span>Skills</span>
       </h2>
-      <div class="flex">
-        <div class="lg">
-          <img src="images/skills/html.svg" alt=""></img>
+      <div class="skills reveal grid">
+        <div>
+          <img src="images/skills/html.svg" alt="html"></img>
           <p>HTML5</p>
         </div>
-        <div class="lg">
-          <img src="images/skills/css.svg" alt=""></img>
+        <div>
+          <img src="images/skills/css.svg" alt="css"></img>
           <p>CSS</p>
         </div>
-        <div class="lg">
-          <img src="images/skills/materializecss.svg" alt=""></img>
+        <div>
+          <img src="images/skills/materializecss.svg" alt="materialize"></img>
           <p>Materialize</p>
         </div>
-        <div class="lg">
-          <img src="images/skills/javascript.svg" alt=""></img>
+        <div>
+          <img src="images/skills/javascript.svg" alt="javascript"></img>
           <p>Javascript</p>
         </div>
-        <div class="lg">
-          <img src="images/skills/php.svg" alt=""></img>
+        <div>
+          <img src="images/skills/php.svg" alt="php"></img>
           <p>PHP</p>
         </div>
-        <!-- <div class="lg">
+        <!-- <div >
           <img src="images/skills/laravel.svg" alt=""></img>
           <p>laravel</p>
         </div> -->
-        <div class="lg">
-          <img src="images/skills/mysql.svg" alt=""></img>
+        <div >
+          <img src="images/skills/mysql.svg" alt="mysql"></img>
           <p>MySql</p>
         </div>
-        <div class="lg">
-          <img src="images/skills/git.svg" alt=""></img>
+        <div >
+          <img src="images/skills/git.svg" alt="git"></img>
           <p>Git</p>
         </div>
       </div>
@@ -141,289 +137,207 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
 </section>
 
 
-<div class="projects" id="projects">
+<section id="projects">
     <div class="container">
       <h2>
         My <span>Projects</span>
       </h2>
 
-      <div class="img-flex reveal">
-        <div>
-          <a href="https://genshin-archive.000webhostapp.com/" target="_blank" rel="noreferrer" >
-            <img src="images/projects/genshin-left.png" alt="" />
-          </a>
-        </div>
-        <div class="img-info">
-          <div class="img-title">
-            <h4>
-              No.<span>01</span>
-            </h4>
-            <h3>Genshin Impact Archive</h3>
+      <div class="project-container">
+        <div class="project grid reveal">
+          <div class="project-img">
+            <a href="https://genshin-archive.000webhostapp.com" target="_blank">
+              <img src="images/projects/genshin-left.png" alt="genshin archive">
+            </a>
           </div>
+          <div class="project-info">
+            <p class="number">No. <span>01</span></p>
+            <p class="title">Genshin Impact Arhive</p>
+            <div class="description">
+              <p>
+                This is my project while learning PHP OOP. 
+                It is made with MaterializeCSS. It consists 
+                of archive list of characters, weapons, artifacts 
+                and consumables. Use this account to login Username: 
+                admin Password: admin. It also has API, check this 
+                link to try: 
+                <span>
+                  <a href="https://genshin-archive.000webhostapp.com/api" target="_blank">
+                    Genshin API
+                  </a>
+                </span> 
+              </p>
+            </div>
 
-          <div class="img-desc">
-            <p>
-              This is my project while learning PHP OOP. It is made 
-              with MaterializeCSS. It consists of archive list of 
-              characters, weapons, artifacts and consumables. Use this account
-              to login Username: admin Password: admin. It also 
-              has API, check this link to try:
-              <a href="https://genshin-archive.000webhostapp.com/api"><span>Genshin API</span></a>
-            </p>
-          </div>
-
-          <div class="flex">
-            <small>HTML</small>
-            <small>CSS</small>
-            <small>JAVASCRIPT</small>
-            <small>PHP</small>
-            <small>MYSQL</small>
-          </div>
-
-          <div class="opt">
-            <ul>
-              <li>
-                <a
-                  href="https://github.com/jownsu/genshin.gg"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://genshin-archive.000webhostapp.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
-              </li>
+            <ul class="project-tech-used">
+              <li><p>HTML</p></li>
+              <li><p>CSS</p></li>
+              <li><p>JAVASCRIPT</p></li>
+              <li><p>PHP</p></li>
+              <li><p>MYSQL</p></li>
             </ul>
+
+            <ul class="project-links">
+              <li><a href="https://github.com/jownsu/genshin.gg" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://genshin-archive.000webhostapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+            </ul>
+
           </div>
         </div>
+
+        <div class="project grid reveal">
+          <div class="project-img">
+            <a href="https://genshin-archive.000webhostapp.com/api" target="_blank">
+              <img src="images/projects/genshinApi-right.png" alt="genshin archive">
+            </a>
+          </div>
+          <div class="project-info">
+            <p class="number">No. <span>02</span></p>
+            <p class="title">Genshin Impact API</p>
+            <div class="description">
+              <p>
+                This Genshin Impact API has same database as my first project 
+                the &quot;Genshin Impact Archive&quot;. It consists list of data of characters, 
+                weapons, artifacts and consumables. It is made of native PHP with 
+                OOP paradigm. Use GET request to fetch the JSON data.
+              </p>
+            </div>
+
+            <ul class="project-tech-used">
+              <li><p>HTML</p></li>
+              <li><p>CSS</p></li>
+              <li><p>PHP</p></li>
+              <li><p>MYSQL</p></li>
+            </ul>
+
+            <ul class="project-links">
+              <li><a href="https://github.com/jownsu/genshin.gg/tree/master/API" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://genshin-archive.000webhostapp.com/api" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+            </ul>
+
+          </div>
+        </div>
+
+
+        <div class="project grid reveal">
+          <div class="project-img">
+            <a href="https://easybank-landingpage.herokuapp.com/" target="_blank">
+              <img src="images/projects/easybank-left.png" alt="genshin archive">
+            </a>
+          </div>
+          <div class="project-info">
+            <p class="number">No. <span>03</span></p>
+            <p class="title">Easy Bank Landing Page</p>
+            <div class="description">
+              <p>
+                The frontendmentor.io website serves as a classroom setting for me to 
+                increase my development abilities and skills. This project assisted and 
+                challenged me to design the navigation bar from the scratch. Here's the 
+                link of the challenge from their website.
+                <span>
+                  <a href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN" target="_blank">
+                    Easybank-landing-page-challenge
+                  </a>
+                </span> 
+              </p>
+            </div>
+
+            <ul class="project-tech-used">
+              <li><p>HTML</p></li>
+              <li><p>CSS</p></li>
+              <li><p>JAVASCRIPT</p></li>
+            </ul>
+
+            <ul class="project-links">
+              <li><a href="https://github.com/jownsu/easybank-landing-page" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://easybank-landingpage.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+            </ul>
+
+          </div>
+        </div>
+
+
+        <div class="project grid reveal">
+          <div class="project-img">
+            <a href="https://fylo-landing-page.herokuapp.com/" target="_blank">
+              <img src="images/projects/fylo-right.png" alt="genshin archive">
+            </a>
+          </div>
+          <div class="project-info">
+            <p class="number">No. <span>04</span></p>
+            <p class="title">Fylo Landing Page</p>
+            <div class="description">
+              <p>
+                This is a frontendmentor.io landing page challenge to help 
+                me practice creating responsive websites. This challenge really 
+                helped me in learning best practices in CSS. Here's the link of 
+                the challenge from their website: 
+                <span>
+                  <a href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd" target="_blank">
+                    Fylo-landing-page-challenge
+                  </a>
+                </span> 
+              </p>
+            </div>
+
+            <ul class="project-tech-used">
+              <li><p>HTML</p></li>
+              <li><p>CSS</p></li>
+              <li><p>JAVASCRIPT</p></li>
+              <li><p>PHP</p></li>
+              <li><p>MYSQL</p></li>
+            </ul>
+
+            <ul class="project-links">
+              <li><a href="https://github.com/jownsu/Fylo-Landing-Page" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://fylo-landing-page.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+            </ul>
+
+          </div>
+        </div>
+    </div>
+
+    </div>
+</section>
+
+<section id="contacts">
+  <div class="container">
+    <div class="contact-container">
+      <div>
+        <img src="images/left-qoute.svg" class="qoute" alt="" />
+        <h1>Need a back-end <span>developer ?</span>{" "}</h1>
+        <h3>Let's <span>work</span> together !!</h3>
+        <p class="message">
+            " Hello, my name is Jhones, and i'm a back-end developer. If you
+            think i could help your business, just contact me. "
+        </p>
+        <ul class="contact-details">
+          <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fas fa-envelope"></i> jhonesdigno777@gmail.com</a></li>
+          <li><p><i class="fas fa-phone"></i> +639263414237</p></li>
+          <li><a href="https://m.me/jownsu"target="_blank"><i class="fab fa-facebook-messenger"></i> Messenger</a></li>
+        </ul>
       </div>
 
-      <div class="img-flex reveal">
-        <div class="img-info-2">
-          <div class="img-title">
-            <h4>
-              No.<span>02</span>
-            </h4>
-            <h3>Genshin Impact API</h3>
-          </div>
 
-          <div class="img-desc">
-            <p>
-              This Genshin Impact API has same database as my first project 
-              the &quot;Genshin Impact Archive&quot;. It consists list of data of characters, 
-              weapons, artifacts and consumables. It is made of native PHP with 
-              OOP paradigm. Use GET request to fetch the JSON data.
-            </p>
-          </div>
+    </div>
+  </div>
+</section>
 
-          <div class="flex">
-            <small>HTML</small>
-            <small>CSS</small>
-            <small>PHP</small>
-            <small>MYSQL</small>
-          </div>
-
-          <div class="opt">
-            <ul>
-              <li>
-                <a
-                  href="https://github.com/jownsu/genshin.gg/tree/master/API"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://genshin-archive.000webhostapp.com/api"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <a href="https://genshin-archive.000webhostapp.com/api" target="_blank" rel="noreferrer" >
-            <img src="images/projects/genshinApi-right.png" alt="api" />
-          </a>
-        </div>
-
+<footer>
+  <hr></hr>
+  <div class="container">
+      <div class="footer-details">
+        <p>
+          Designed by Jhones Digno &copy; 2021 
+          <a href="https://github.com/jownsu" target="_blank"><i class="fab fa-github"></i></a>
+        </p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> 
+          0459 Rosal St. Bo. San Lazaro Tala Caloocan City, Philippines
+        </p>
       </div>
-
-      <div class="img-flex reveal">
-        <div>
-          <a href="https://easybank-landingpage.herokuapp.com/" target="_blank" rel="noreferrer" >
-            <img src="images/projects/easybank-left.png" alt="fylo" />
-          </a>
-        </div>
-        <div class="img-info">
-          <div class="img-title">
-            <h4>
-              No.<span>03</span>
-            </h4>
-            <h3>Easy Bank Landing Page</h3>
-          </div>
-
-          <div class="img-desc">
-            <p>
-              The frontendmentor.io website serves as a classroom setting for me to increase my
-              development abilities and skills. This project assisted and challenged me to design
-              the navigation bar from the scratch. Here's the link of the challenge from their website.
-              <a href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN" target="_blank">Easybank-landing-page-challenge</a> 
-              
-            </p>
-          </div>
-
-          <div class="flex">
-            <small>HTML</small>
-            <small>CSS</small>
-            <small>JAVASCRIPT</small>
-          </div>
-
-          <div class="opt">
-            <ul>
-              <li>
-                <a href="https://github.com/jownsu/easybank-landing-page" target="_blank" rel="noreferrer" >
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://easybank-landingpage.herokuapp.com/" target="_blank" rel="noreferrer" >
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="img-flex reveal">
-        <div class="img-info-2">
-          <div class="img-title">
-            <h4>
-              No.<span>04</span>
-            </h4>
-            <h3>Fylo Landing Page</h3>
-          </div>
-
-          <div class="img-desc">
-            <p>
-              This is a frontendmentor.io landing page challenge to help me practice creating responsive websites. 
-              This challenge really helped me in learning best practices in CSS. Here's the link of the challenge 
-              from their website: 
-              <a href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd">Fylo-landing-page-challenge</a>
-            </p>
-          </div>
-
-          <div class="flex">
-            <small>HTML</small>
-            <small>CSS</small>
-            <small>JAVASCRIPT</small>
-          </div>
-
-          <div class="opt">
-            <ul>
-              <li>
-                <a href="https://github.com/jownsu/Fylo-Landing-Page" target="_blank" rel="noreferrer" >
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://fylo-landing-page.herokuapp.com/" target="_blank" rel="noreferrer" >
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <a href="https://fylo-landing-page.herokuapp.com/" target="_blank" rel="noreferrer" >
-            <img src="images/projects/fylo-right.png" alt="" />
-          </a>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-<div class="touch" id="contacts">
-<div class="container">
-    <div class="touch-wrapper">
-    <img src="images/left-qoute.svg" alt="" />
-    <h1>
-        Need a back-end <span>developer ?</span>{" "}
-    </h1>
-    <h3>
-        Let's <span>work</span> together !!
-    </h3>
-    <div class="message">
-        <small>
-        " Hello, my name is Jhones, and i'm a back-end developer. If you
-        think i could help your business, just contact me. "
-        </small>
-    </div>
-    <div class="contact-details">
-        <div class="flex">
-        <i class="fas fa-envelope"></i>
-        <a
-            href="https://mail.google.com/mail/u/0/#inbox"
-            target="_blank"
-            rel="noreferrer"
-        >
-            <p>jhonesdigno777@gmail.com</p>
-        </a>
-        </div>
-        <div class="flex">
-        <i class="fas fa-phone"></i>
-        <p>+639263414237</p>
-        </div>
-        <div class="flex">
-        <i class="fab fa-facebook-messenger"></i>
-        <a
-            href="https://m.me/jownsu"
-            target="_blank"
-            rel="noreferrer"
-        >
-            <p>Messenger</p>
-        </a>
-        </div>
-    </div>
-    </div>
-</div>
-</div>
-
-<div class="footer">
-<hr></hr>
-<div class="container">
-    <div class="footer-details">
-    <div class="flex">
-        <small>Designed by Jhones Digno &copy; 2021</small>
-        <a
-        href="https://github.com/jownsu"
-        target="_blank"
-        rel="noreferrer"
-        >
-        <i class="fab fa-github"></i>
-        </a>
-    </div>
-    <div class="flex">
-        <i class="fas fa-map-marker-alt"></i>
-        <small>Philippines</small>
-    </div>
-    </div>
-</div>
-</div>
+  </div>
+</footer>
 
 <script src="js/script.js"></script>
 <script src="js/reveal.js"></script>
